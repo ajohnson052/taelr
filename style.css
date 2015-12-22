@@ -36,6 +36,11 @@ button:focus{
   float: right;
 }
 
+#another{
+  float: right;
+  display: none;
+}
+
 #previous{
   float: left;
   display: none;
