@@ -1,6 +1,22 @@
 $(document).ready(function(){
 
-  var imageIndex = 0
+  var imageIndex = 0;
+  var doges = []
+  
+  var getDoges = function(){
+    $.getJSON("https://api.unsplash.com/photos/search?client_id=28ab92b0a76bc92b6e43807c2e5456aca925f50b4148ec19afa5f64261fa7821&query=dog").done(function(response){
+      doges = response;
+      showDoge();
+    }).fail(function(){
+      console.log("failed request");
+    });
+  };
+
+  var showDoge = function(){
+    console.log(doges)
+    var imageUrl = doges[imageIndex].urls.regular;
+    $("#doge").empty().append($("<img src=" + imageUrl + ">"));
+  };
 
   $("#getDoge").click(function(){
     $(".welcome").slideUp();
@@ -8,43 +24,26 @@ $(document).ready(function(){
     $("#getDoge").css("display", "none");
     $("#previous").css("display", "inline");
     $("#another").css("display", "inline");
-    $.getJSON("https://api.unsplash.com/photos/search?client_id=28ab92b0a76bc92b6e43807c2e5456aca925f50b4148ec19afa5f64261fa7821&query=dog").done(function(response){
-      var imageUrl = response[imageIndex].urls.regular;
-      $("#doge").empty().append($("<img src=" + imageUrl + ">"))
-    }).fail(function(){
-      console.log("failed request")
-    })
+    getDoges();
   });
 
   $("#another").click(function(){
-    $.getJSON("https://api.unsplash.com/photos/search?client_id=28ab92b0a76bc92b6e43807c2e5456aca925f50b4148ec19afa5f64261fa7821&query=dog").done(function(response){
-      if(imageIndex < response.length - 1){
-        imageIndex += 1;
-      }else{
-        imageIndex = 0;
-      }
-      var imageUrl = response[imageIndex].urls.regular;
-      $("#doge").empty().append($("<img src=" + imageUrl + ">"));
-    }).fail(function(){
-      console.log("failed request")
-    })
+    if(imageIndex < doges.length - 1){
+      imageIndex += 1;
+    }else{
+      imageIndex = 0;
+    };
+    showDoge();
   });
 
   $("#previous").click(function(){
-    $.getJSON("https://api.unsplash.com/photos/search?client_id=28ab92b0a76bc92b6e43807c2e5456aca925f50b4148ec19afa5f64261fa7821&query=dog").done(function(response){
-      if(imageIndex>0){
-        imageIndex -= 1;
-        var imageUrl = response[imageIndex].urls.regular;
-        $("#doge").empty().append($("<img src=" + imageUrl + ">"))
-      }else{
-        imageIndex = response.length - 1;
-        var imageUrl = response[imageIndex].urls.regular;
-        $("#doge").empty().append($("<img src=" + imageUrl + ">"))
-      }
-    }).fail(function(){
-      console.log("failed request")
-    })
-  })
+    if(imageIndex>0){
+      imageIndex -= 1;
+    }else{
+      imageIndex = doges.length - 1;
+    };
+    showDoge();
+  });
 
 
 
