@@ -1,14 +1,47 @@
 body{
-  background: mediumTurquoise;
+  /*background: mediumTurquoise;*/
+  background: url("https://images.unsplash.com/photo-1426287658398-5a912ce1ed0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee538399b8d3a528f6607c6325c7a265")  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
   font-family: 'Slabo 27px', serif;
 }
 
 main{
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   text-align: center;
 }
 
+.welcome{
+  background: white;
+  opacity: .4;
+}
+
 button{
-  
+  font-family: inherit;
+  font-size: 1rem;
+  background: white;
+  border-radius: 50px;
+  opacity: .4;
+  border: none;
+}
+
+button:focus{
+  outline: 0;
+}
+
+#getDoge{
+  float: right;
+}
+
+#previous{
+  float: left;
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100vh;
 }
