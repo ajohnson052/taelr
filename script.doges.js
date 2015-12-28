@@ -12,11 +12,10 @@ $(document).ready(function(){
     });
   };
 
-  var showDoge = function(){
-    console.log(doges)
-    var imageUrl = doges[imageIndex].urls.regular;
-    $("#doge").empty().append($("<img src=" + imageUrl + ">"));
-  };
+  // var showDoge = function(){
+  //   var imageUrl = doges[imageIndex].urls.regular;
+  //   $("#doge").empty().append($("<img src=" + imageUrl + ">"));
+  // };
 
   $("#getDoge").click(function(){
     $(".welcome").slideUp();
@@ -26,6 +25,11 @@ $(document).ready(function(){
     $("#another").css("display", "inline");
     getDoges();
   });
+
+  // var showDoge = function(){
+  //   var imageUrl = doges[imageIndex].urls.regular;
+  //   $("body").css("background", "url(" + imageUrl + ") no-repeat center center fixed").css("-webkit-background-size", "cover").css("-moz-background-size", "cover").css(";-o-background-size", "cover")
+  // };
 
   $("#another").click(function(){
     if(imageIndex < doges.length - 1){
