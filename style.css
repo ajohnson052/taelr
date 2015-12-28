@@ -13,11 +13,6 @@ main{
   text-align: center;
 }
 
-.welcome{
-  background: white;
-  opacity: .4;
-}
-
 button{
   background: rgb(120,120,120);
   font-family: inherit;
@@ -37,6 +32,16 @@ button:active{
 
 button:focus{
   outline: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.welcome{
+  background: white;
+  opacity: .4;
 }
 
 .primaryButton{
@@ -62,9 +67,4 @@ button:focus{
 #previous{
   float: left;
   display: none;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100vh;
 }
