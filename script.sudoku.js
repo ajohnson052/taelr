@@ -16,10 +16,7 @@ $(document).ready(function(){
       }
     }
     $("td").each(function(){
-      $(this).css("background-color", "white");
-      $(this).css("height", "5vh");
-      $(this).css("width", "5vh")
-      $(this).css("padding", "1vh")
+      $(this).html("<input type='text' />")
     })
   }
 

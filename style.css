@@ -39,6 +39,22 @@ img {
   max-height: 100vh;
 }
 
+td {
+  background: white;
+  width: 5vh;
+  height: 5vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+
 .welcome{
   background: white;
   opacity: .4;
