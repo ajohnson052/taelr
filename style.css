@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   background: url("https://images.unsplash.com/photo-1426287658398-5a912ce1ed0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee538399b8d3a528f6607c6325c7a265")  no-repeat center center fixed;
   -webkit-background-size: cover;

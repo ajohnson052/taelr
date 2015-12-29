@@ -12,10 +12,10 @@ $(document).ready(function(){
     });
   };
 
-  // var showDoge = function(){
-  //   var imageUrl = doges[imageIndex].urls.regular;
-  //   $("#doge").empty().append($("<img src=" + imageUrl + ">"));
-  // };
+  var showDoge = function(){
+    var imageUrl = doges[imageIndex].urls.regular;
+    $("#doge").empty().append($("<img src=" + imageUrl + ">"));
+  };
 
   $("#getDoge").click(function(){
     $(".welcome").slideUp();

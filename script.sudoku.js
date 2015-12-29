@@ -55,9 +55,9 @@ $(document).ready(function(){
       d3.select(".r" + i)
         .selectAll("td")
         .data(data[i])
-        .text(function(d){
-          return d;
-        })
+        // .text(function(d){
+        //   return d;
+        // })
     }
 
   }
