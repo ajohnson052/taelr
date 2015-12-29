@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
-  /*background: mediumTurquoise;*/
   background: url("https://images.unsplash.com/photo-1426287658398-5a912ce1ed0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee538399b8d3a528f6607c6325c7a265")  no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
   font-family: 'Slabo 27px', serif;
 }
@@ -14,34 +17,78 @@ main{
   text-align: center;
 }
 
-.welcome{
-  background: white;
-  opacity: .4;
-}
-
 button{
+  background: rgb(120,120,120);
   font-family: inherit;
   font-size: 1rem;
-  background: white;
   border-radius: 50px;
-  opacity: .4;
   border: none;
+  margin: 1rem;
+}
+
+button:hover{
+  background: rgb(110,110,110);
+}
+
+button:active{
+  background: rgb(100,100,100);
 }
 
 button:focus{
   outline: 0;
 }
 
-#getDoge{
+img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+td {
+  background: white;
+  width: 5vh;
+  height: 5vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+
+table {
+  margin: 0 auto; 
+}
+
+.welcome{
+  background: white;
+  opacity: .4;
+}
+
+.primaryButton{
+  background: radial-gradient(rgb(140,140,140), rgb(100,100,100), rgb(10,10,10));
   float: right;
+  width: 6rem;
+  height: 6rem;
+}
+
+.primaryButton:hover{
+  background: radial-gradient(rgb(120,120,120), rgb(100,100,100), rgb(10,10,10));
+}
+
+.primaryButton:active{
+  background: radial-gradient(rgb(90,90,90), rgb(100,100,100), rgb(10,10,10));
+}
+
+#another{
+  float: right;
+  display: none;
 }
 
 #previous{
   float: left;
   display: none;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100vh;
 }

@@ -14,7 +14,13 @@
     $stateProvider
     .state("welcome", {
       url: "/",
-      templateUrl: "js/welcome.html"
+      templateUrl: "js/welcome/welcome.html"
+    })
+    .state("sudoku", {
+      url: "/sudoku",
+      templateUrl: "js/sudoku/sudoku.html",
+      controller: "SudokuController",
+      controllerAs: "SudokuViewModel"      
     })
     .state("slideshow", {
       url: "/slideshow",
