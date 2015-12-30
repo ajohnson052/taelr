@@ -59,6 +59,10 @@ input{
   border: none;
 }
 
+table {
+  margin: 0 auto;
+}
+
 .welcome{
   background: white;
   opacity: .4;

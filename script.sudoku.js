@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#getSudoku").click(function(){
-    $("body").append("<table id='board'></table>");
+    $("main").append("<table id='board'></table>");
     makeBoard();
     var array = makeArray();
     assignValues(array);
@@ -55,9 +55,6 @@ $(document).ready(function(){
       d3.select(".r" + i)
         .selectAll("td")
         .data(data[i])
-        // .text(function(d){
-        //   return d;
-        // })
     }
 
   }
