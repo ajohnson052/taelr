@@ -18,9 +18,7 @@
     })
     .state("sudoku", {
       url: "/sudoku",
-      templateUrl: "js/sudoku/sudoku.html",
-      controller: "SudokuController",
-      controllerAs: "SudokuViewModel"      
+      templateUrl: "js/sudoku/sudoku.html"
     })
     .state("slideshow", {
       url: "/slideshow",
