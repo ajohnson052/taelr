@@ -9,9 +9,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/sudoku/board.directive.js"></script>
-    <script src="js/slideshow.controller.js"></script>
+    <script src="js/slideshow/slideshow.controller.js"></script>
+    <script src="js/slideshow/slideshow.directive.js"></script>
   </head>
   <body>
-    <main data-ui-view></main>
+    <main>
+      <div class="welcome">
+        <h1>Congratulations, Tael'r Eason!</h1>
+        <h2> You now own a small slice of the world wide web.</h2>
+      </div>
+      <nav>
+        <button class="primaryButton" id="getDoge" data-ui-sref="slideshow">Show me another Doge!</button>
+        <button class="primaryButton" id="getSudoku" data-ui-sref="sudoku">Give me a puzzle!</button>
+      </nav>
+      <div class="content" data-ui-view></div>
+    </main>
   </body>
 </html>

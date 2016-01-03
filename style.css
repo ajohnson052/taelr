@@ -17,6 +17,10 @@ main{
   text-align: center;
 }
 
+/*nav{
+  position: absolute;
+}*/
+
 button{
   background: rgb(120,120,120);
   font-family: inherit;
@@ -24,6 +28,7 @@ button{
   border-radius: 50px;
   border: none;
   margin: 1rem;
+  display: block;
 }
 
 button:hover{
@@ -60,7 +65,7 @@ input{
 }
 
 table {
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .welcome{
@@ -68,9 +73,12 @@ table {
   opacity: .4;
 }
 
+.content{
+  display: inline-block;
+}
+
 .primaryButton{
   background: radial-gradient(rgb(140,140,140), rgb(100,100,100), rgb(10,10,10));
-  float: right;
   width: 6rem;
   height: 6rem;
 }
@@ -83,7 +91,7 @@ table {
   background: radial-gradient(rgb(90,90,90), rgb(100,100,100), rgb(10,10,10));
 }
 
-#another{
+/*#another{
   float: right;
   display: none;
 }
@@ -91,4 +99,4 @@ table {
 #previous{
   float: left;
   display: none;
-}
+}*/

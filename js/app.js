@@ -13,8 +13,7 @@
   function RouterFunction($stateProvider){
     $stateProvider
     .state("welcome", {
-      url: "/",
-      templateUrl: "js/welcome/welcome.html"
+      url: "/"
     })
     .state("sudoku", {
       url: "/sudoku",
@@ -22,7 +21,7 @@
     })
     .state("slideshow", {
       url: "/slideshow",
-      templateUrl: "js/slideshow.html",
+      templateUrl: "js/slideshow/slideshow.html",
       controller: "SlideshowController",
       controllerAs: "SlideshowViewModel"
     })

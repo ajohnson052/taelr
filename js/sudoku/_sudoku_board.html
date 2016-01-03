@@ -1,5 +1,5 @@
 <table id='board' >
-  <tr data-ng-repeat="row in array">
-    <td data-ng-repeat="cell in row" value={{cell}}><input ng-if="cell ==9" type="text" ng-model="value"/><span ng-if="cell != 9" >{{cell}} </span></td>
+  <tr data-ng-repeat="row in puzzle">
+    <td data-ng-repeat="cell in row track by $index" value={{cell}}><input ng-if="cell == 0" type="text" ng-model="value"/><span ng-if="cell != 0" >{{cell}} </span></td>
   </tr>
 </table>
