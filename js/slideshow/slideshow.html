@@ -1,8 +1,8 @@
-<button data-ng-click="next()">Another!</button>
-<button data-ng-click= "prior()">Go Back</button>
-
-<img src="{{doges[index].urls.regular}}">
-<!-- <ul ng-repeat="doge in doges">
-  <img src={{doge.urls.regular}}></li>
-</ul> -->
-<!-- <data-doge-slideshow data-image-url="imageUrl"></data-doge-slideshow> -->
+<div id="dogeSlideshow">
+  <nav>
+    <button data-ui-sref="welcome">Home</button>
+    <button data-ng-click= "prior()">Go Back</button>
+    <button data-ng-click="next()">Another!</button>
+  </nav>
+  <img src="{{doges[index].urls.regular}}">
+</div>
