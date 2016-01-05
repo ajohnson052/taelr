@@ -16,10 +16,6 @@
       url: "/",
       templateUrl: "js/welcome/welcome.html"
     })
-    // .state("sudoku", {
-    //   url: "/sudoku",
-    //   templateUrl: "js/sudoku/sudoku.html"
-    // })
     .state("slideshow", {
       url: "/slideshow",
       templateUrl: "js/slideshow/slideshow.html",
